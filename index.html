@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+    <title>Numbered List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+ </head>
+
+ <style>
+    body{
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            
+        }
+
+        .header-items{
+            display: flex;
+            justify-content: flex-end;       
+            gap: 2rem;                       
+            align-items: center;             
+            width: 100%;   
+        }
+        .navbar-brand{
+            padding: 25px;
+        }
+        /*start*/
+        #nav-bar{
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            
+
+
+        }
+        .navbar{
+            padding: 0 !important;
+            background-color: #007BFF;
+            
+            
+        }
+        .navbar-nav li{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 7px;
+            font-size: 15px;
+            
+            
+            
+        }
+        .navbar-nav li a{
+            color: white !important;
+            font-weight: 300px;
+            float: right;
+            text-align: left;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;   
+           
+        }
+       
+        .sign-up {
+            
+            font-size: 15px;         
+            padding: 3px 7px;        
+            border-radius: 15px;
+            /*remove outline*/
+        }
+        .sign-up.btn-lg {
+            padding: 7px 14px !important;  
+            background-color: #28A745;
+        }
+        /*.sign-up.btn-lg:hover{
+            background-color: #007BFF;
+            color:white;
+            transition: all 0.15s ease;
+        }*/
+        .fa-bars{   
+            color: #fff;
+            font-size: 30px !important;
+            /*does not work*/
+
+        }
+        .navbar-toggler{
+            outline: none !important;
+            /* does not work*/
+        }
+        
+        /*Banner Section*/
+
+        #banner{
+            background: linear-gradient(to right, #007BFF, #28A745);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+       
+        
+        .promo-title h1{
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 10px;
+            padding: 10px;
+
+        }
+        .start-mapping.btn-lg {
+            padding: 7px 14px !important;  
+            
+            background-color: white;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Drop shadow */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .start-mapping.btn-lg:hover{
+            color: #fff;
+            background-color: #007BFF;
+            transition: all 0.15s ease;
+
+        }
+        /*.wave{
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }*/
+
+        /*Features Section*/
+
+        #features{
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 2rem;
+            background-color: #fff;
+            
+            
+            
+        }
+        
+        .features-col{
+            padding: 3rem 2rem;
+            text-align: center; 
+        }   
+        
+        .features-col h4{
+            font-size: 20px;
+            font-weight: 600;
+            padding: -5px;
+            margin-top: 30px;
+        }
+
+        /*---Community Section--*/
+
+        #community{
+            padding: 3rem 2rem;
+            background-color: #e9f7ef;;
+        }
+        #community img {
+            width: 100%;      /* or set a fixed width like 150px */
+            height: auto;
+            border-radius: 10px; /* optional */
+            object-fit: cover; /* keeps it cropped nicely */
+        }
+        #community h4{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        .testimonies{
+            padding: 5px;
+            padding-bottom: -5px;
+            padding-top: -5px;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            
+        }
+        .img-border{
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Drop shadow */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            
+        }
+
+        /*--Footer Section--*/
+        
+        #footer{
+            text-align: center;
+            background-color: black;
+        }
+        #footer a {
+            color: white;
+            display: block; 
+            margin: 10px 0; 
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .copyright{
+            color: #fff;
+        }
+ </style>
+ 
+ <body>
+   
+   <!-----Header-->
+   <section id="nav-bar">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand mb-0 h1" href="#">MapMyTrip</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-regular fa-bars"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exploe Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Community</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="btn sign-up btn-primary btn-lg active" role="button" aria-pressed="true">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+   
+    </section>
+
+    <!----------------Banner section-------->
+   <section id="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md promo-title">
+                <h1 class="promo-title">Plan Your Journey, Capture Your Memories</h1>
+                <p>Mark your travel spots, post your favorite shots, and share your stories.</p>
+                <a href="#" class="btn start-mapping btn-primary btn-lg active" role="button" aria-pressed="true">Start Mapping</a>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--<img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\wave1.png" class="wave-img" alt="Wave">-->
+   </section>
+   
+   
+    <!-------------Features Section---------->
+    <section id="features">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-4 features-col">
+                    <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\map-pin.png" class= "map-pin-img" alt="Map Pin">
+                    <!--<img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\img-map-pin.jpg" alt="">-maybe add image background-->
+                    <h4>Pin your locations</h4>
+                    <p>Drop pins anywhere in the world and keep track of your travels.</p>
+                </div>
+                <div class="col-md-4 features-col">
+                    <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\speech-bubble.png" class= "camera-img" alt="Camera">
+                    <h4>Attach Photos</h4>
+                    <p>Upload beautiful memories and share what you saw and felt.</p>
+                </div>
+                <div class="col-md-4 features-col">
+                    <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\camera.png" class= "speach-bubble-img" alt="Speech Bubble">
+                    <h4>Share your Stories</h4>
+                    <p>Tell your unique travel story with notes and tips for others.</p>
+                </div>
+            </div>
+        </div>
+            
+                
+            
+        
+    </section>
+
+    <!----------Community Highligts------------>
+    <section id="community">
+        <h4>Community Highligts</h4> 
+
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 test-col"> 
+                    <div class="p3 img-border border bg-light align-items-end">
+                        <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\dolomites.jpg" alt="Trip Photo">
+                        <p class="testimonies">"Hiking through the Dolomites was unforgettable!"</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 test-col"> 
+                    <div class="p3 img-border border bg-light">
+                        <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\santorini.jpg" alt="Trip Photo">
+                        <p class="testimonies">"Sunset in Santorini - absolutely magical."</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 test-col"> 
+                    <div class="p3 img-border border bg-light">
+                        <img src="C:\Users\Harry\Desktop\sem 8\web dev\my html\kyoto.jpg" alt="Trip Photo">
+                        <p class="testimonies">"Exploring Kyoto in the fall is a must-do!"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------Footer Section-->
+
+    <section id="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto text-center">
+                    <a href="">Twitter</a>
+                    <a href="">YouTube</a>
+                </div>
+                <div class="col-auto text-center">
+                    <a href="">Instagram</a>
+                    <a href="">TikTok</a>
+                </div>
+                <p class="copyright">© 2025 MapMyTrip. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+    
+ 

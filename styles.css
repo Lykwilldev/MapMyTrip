@@ -1,0 +1,199 @@
+body{
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            
+        }
+
+        .header-items{
+            display: flex;
+            justify-content: flex-end;       
+            gap: 2rem;                       
+            align-items: center;             
+            width: 100%;   
+        }
+        .navbar-brand{
+            padding: 25px;
+        }
+        /*start*/
+        #nav-bar{
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            
+
+
+        }
+        .navbar{
+            padding: 0 !important;
+            background-color: #007BFF;
+            
+            
+        }
+        .navbar-nav li{
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3px 7px;
+            font-size: 15px;
+            
+            
+            
+        }
+        .navbar-nav li a{
+            color: white !important;
+            font-weight: 300px;
+            float: right;
+            text-align: left;
+        }
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;   
+           
+        }
+       
+        .sign-up {
+            
+            font-size: 15px;         
+            padding: 3px 7px;        
+            border-radius: 5px;
+            /*remove outline*/
+        }
+        .sign-up.btn-lg {
+            padding: 7px 14px !important;  
+            background-color: #28A745;
+        }
+        /*.sign-up.btn-lg:hover{
+            background-color:#28A745;
+            color:white;
+            transition: all 0.15s ease;
+        }*/
+        .fa-bars{   
+            color: #fff;
+            font-size: 30px !important;
+            /*does not work*/
+
+        }
+        .navbar-toggler{
+            outline: none !important;
+            /* does not work*/
+        }
+        
+        /*Banner Section*/
+
+        #banner{
+            background: linear-gradient(to right, #007BFF, #28A745);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+       
+        
+        .promo-title h1{
+            font-size: 40px;
+            font-weight: 600;
+            margin-top: 10px;
+            padding: 10px;
+
+        }
+        .start-mapping.btn-lg {
+            padding: 7px 14px !important;  
+            
+            background-color: white;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Drop shadow */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .start-mapping.btn-lg:hover{
+            color: #fff;
+            background-color: #007BFF;
+            transition: all 0.15s ease;
+
+        }
+        /*.wave{
+            width: 100%;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }*/
+
+        /*Features Section*/
+
+        #features{
+            padding: 80px 0;
+            display: flex;
+            justify-content: space-around;
+            padding: 3rem 2rem;
+            background-color: #fff;
+            
+            
+            
+        }
+        
+        .features-col{
+            padding: 3rem 2rem;
+            text-align: center; 
+        }   
+        
+        .features-col h4{
+            font-size: 20px;
+            font-weight: 600;
+            padding: -5px;
+            margin-top: 30px;
+        }
+
+        /*---Community Section--*/
+
+        #community{
+            padding: 3rem 2rem;
+            background-color: #e9f7ef;;
+        }
+        #community img {
+            width: 100%;      /* or set a fixed width like 150px */
+            height: auto;
+            border-radius: 10px; /* optional */
+            object-fit: cover; /* keeps it cropped nicely */
+        }
+        #community h4{
+            font-size: 30px;
+            font-weight: 600;
+            padding: 10px;
+        }
+
+        .testimonies{
+            padding: 5px;
+            padding-bottom: -5px;
+            padding-top: -5px;
+            text-align: center;
+            font-size: 18px;
+            margin: 0;
+            
+        }
+        .img-border{
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Drop shadow */
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            
+        }
+
+        /*--Footer Section--*/
+        
+        #footer{
+            text-align: center;
+            background-color: black;
+        }
+        #footer a {
+            color: white;
+            display: block; 
+            margin: 10px 0; 
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .copyright{
+            color: #fff;
+        }
