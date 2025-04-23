@@ -1,0 +1,124 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    
+}
+/*--Header--*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+}
+.navbar{
+    padding: 0 !important;
+    background-color: #007BFF;
+    
+    
+}
+.navbar-nav li{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 7px;
+    font-size: 15px;
+    
+    
+    
+}
+.navbar-nav li a{
+    color: white !important;
+    font-weight: 300px;
+    float: right;
+    text-align: left;
+}
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;   
+    padding: 25px;
+}
+   
+
+
+.sign-up {
+    
+    font-size: 15px;         
+    padding: 3px 7px;        
+    border-radius: 15px;
+    /*remove outline*/
+}
+.sign-up.btn-lg {
+    padding: 7px 14px !important;  
+    background-color: #28A745;
+}
+/*.sign-up.btn-lg:hover{
+    background-color: #007BFF;
+    color:white;
+    transition: all 0.15s ease;
+}*/
+.fa-bars{   
+    color: #fff;
+    font-size: 30px !important;
+    /*does not work*/
+
+}
+.navbar-toggler{
+    outline: none !important;
+    /* does not work*/
+}
+
+/*Banner Section*/
+
+#banner{
+    background-color: #007BFF;
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+
+.promo-title h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+.start-mapping.btn-lg {
+    padding: 7px 14px !important;  
+    
+    background-color: white;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+.start-mapping.btn-lg:hover{
+    color: #fff;
+    background-color: #007BFF;
+    transition: all 0.15s ease;
+
+}
+
+
+
+/*--Footer Section--*/
+
+#footer{
+    text-align: center;
+    background-color: black;
+}
+#footer a {
+    color: white;
+    display: block; 
+    margin: 10px 0; 
+    text-decoration: none;
+    font-weight: 500;
+}
+.copyright{
+    color: #fff;
+}
